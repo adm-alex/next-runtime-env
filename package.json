@@ -10,6 +10,7 @@
     "test:coverage": "pnpm test -- --coverage",
     "test:watch": "pnpm test -- --maxWorkers=50% --watchAll",
     "build": "tsc -p .",
+    "prepare": "npm run build",
     "build:watch": "pnpm build --watch",
     "audit-ci": "audit-ci",
     "semantic-release": "semantic-release"
@@ -61,7 +62,7 @@
     "whatwg-fetch": "^3.6.20"
   },
   "peerDependencies": {
-    "next": "^14",
-    "react": "^18"
+    "next": "^15",
+    "react": "^19"
   }
 }
